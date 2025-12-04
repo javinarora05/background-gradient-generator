@@ -1,7 +1,7 @@
 const btn1 = document.getElementById("btn1");
 const btn2 = document.getElementById("btn2");
 let rgb1 = "#000"
-let rbg2 = "#fff"
+let rbg2 = "#444"
 let copyDiv = document.querySelector(".code-box");
 
 
@@ -19,12 +19,14 @@ let changeColor1 = () => {
      rgb1 = hexValues();
     document.body.style.backgroundImage= `linear-gradient(to right, ${rgb1}, ${rgb2})`;
     copyDiv.innerHTML = ` background-image: linear-gradient(to right, ${rgb1}, ${rgb2})`;
+    btn1.innerHTML = `${rgb1}`
 };
 
 let changeColor2 = () => {
     rgb2 = hexValues();
      document.body.style.backgroundImage= `linear-gradient(to right, ${rgb1}, ${rgb2})`;
      copyDiv.innerHTML = ` background-image: linear-gradient(to right, ${rgb1}, ${rgb2})`;
+     btn2.innerHTML = `${rgb2}`
 };
 
 btn1.addEventListener("click", changeColor1);
