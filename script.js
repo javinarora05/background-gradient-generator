@@ -31,3 +31,7 @@ let changeColor2 = () => {
 
 btn1.addEventListener("click", changeColor1);
 btn2.addEventListener("click", changeColor2);
+
+copyDiv.addEventListener('click' , () => {
+    navigator.clipboard.writeText(copyDiv.innerText);
+})
