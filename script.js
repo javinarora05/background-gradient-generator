@@ -19,14 +19,14 @@ let changeColor1 = () => {
      rgb1 = hexValues();
     document.body.style.backgroundImage= `linear-gradient(to right, ${rgb1}, ${rgb2})`;
     copyDiv.innerHTML = ` background-image: linear-gradient(to right, ${rgb1}, ${rgb2})`;
-    btn1.innerHTML = `${rgb1}`
+    btn1.innerText = `${rgb1}`
 };
 
 let changeColor2 = () => {
     rgb2 = hexValues();
      document.body.style.backgroundImage= `linear-gradient(to right, ${rgb1}, ${rgb2})`;
      copyDiv.innerHTML = ` background-image: linear-gradient(to right, ${rgb1}, ${rgb2})`;
-     btn2.innerHTML = `${rgb2}`
+     btn2.innerText = `${rgb2}`
 };
 
 btn1.addEventListener("click", changeColor1);
@@ -35,3 +35,4 @@ btn2.addEventListener("click", changeColor2);
 copyDiv.addEventListener('click' , () => {
     navigator.clipboard.writeText(copyDiv.innerText);
 })
+
