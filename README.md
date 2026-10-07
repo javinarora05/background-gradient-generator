@@ -1,91 +1,23 @@
-# background-gradient-generator
-🌈 Gradient Generator UI
+# 🌈 Background Gradient Generator
 
-A sleek and interactive tool for generating CSS linear-gradients.
-Click the two color buttons to randomize colors and instantly preview a new gradient (and copy the CSS!).
+> Generate beautiful CSS linear gradients instantly with vanilla JavaScript.
 
-🚀 Features
+## ✨ Features
+- Random HEX color generation
+- Live gradient preview
+- Copy-ready CSS output
+- Frosted-glass inspired UI
+- Zero external dependencies
 
-✔️ Generate random hex colors
-✔️ Live gradient background preview
-✔️ Automatically updates the preview CSS
-✔️ Clean UI with frosted-glass code box
-✔️ No dependencies — fully vanilla JS
+## 🧰 Built With
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
 
-📂 Project Structure
-root
-│── index.html
-│── styles.css
-└── script.js
+## 🚀 Run
+Open `index.html` in a browser or use Live Server.
 
+## 🧠 How it works
+JavaScript generates random HEX values, injects them into a CSS `linear-gradient()`, and updates the preview in real time.
 
-index.html — UI layout and structure
-styles.css — Styling, colors, fonts, gradient background
-script.js — Core logic: random hex color + live gradient update
-
-🧠 How It Works
-🔹 Generate random hex color
-let values = "0123456789abcdef";
-let color = "#";
-for (let i = 0; i < 6; i++) {
-    color += values[Math.floor(Math.random() * 16)];
-}
-
-🔹 Update gradient live
-document.body.style.backgroundImage =
-  `linear-gradient(to right, ${rgb1}, ${rgb2})`;
-
-🔹 Update displayed CSS
-copyDiv.innerHTML =
-  `background-image: linear-gradient(to right, ${rgb1}, ${rgb2})`;
-
-🖱 Usage
-
-Download or clone this repository:
-
-git clone https://github.com/javinarora05/background-gradient-generator.git
-
-
-Open index.html in your browser.
-
-Click the left or right color button to generate new colors.
-
-Copy the displayed CSS and use it in your own project.
-
-🌟 Demo (Optional)
-
-Add a GitHub Pages link after deploying:
-
-https://javinarora05.github.io/background-gradient-generator/
-
-🛠 Built With
-
-HTML5
-
-CSS3
-
-JavaScript (Vanilla)
-
-No frameworks. No libraries. Blazing fast.
-
-🧩 Future Improvements
-
- Add copy-to-clipboard button
-
- Add gradient direction selector
-
- Add color locking
-
- Add history of generated gradients
-
- Add ability to manually enter hex codes
-
-🤝 Contributing
-
-Pull requests are welcome!
-For major changes, please open an issue first to discuss what you’d like to change.
-
-📄 License
-
-This project is open source.
-You may modify and use it freely.
+Built by **Javin Arora**.
